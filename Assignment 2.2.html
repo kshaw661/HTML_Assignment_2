@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>This is the title of the Page </title>
+		<title>Assignment 2.2 : Form</title>
 	</head>
 
-	<body style="padding:5px;">
-		<h1>This is the Body of the Page</h1>
-		<p>Anything within the body of the a page is displayed in the main browser window.</p>
-		
+	<body>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>Your Details:</legend>
+				<label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
+				<label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
+			</fieldset><br />
+			<!-- 
+			   Section for Review Section Start
+			-->
+			<fieldset>
+				<legend>Your Review:</legend>
+				<div>
+					<label>How did you hear about us?</label>
+					<select name="hear_abt_us">
+						<option name="google">Google</option>
+						<option name="yahoo">Yahoo</option>
+						<option name="aol">AOL</option>
+						<option name="sify">Sify</option>
+						<option name="msn">MSN</option>
+					</select>
+				</div>
+				<p>
+					<label>Would you visti again?</label><br />
+					<input type="radio" name="wuld_visit_again" value="yes"> Yes
+					<input type="radio" name="wuld_visit_again" value="no"> No
+					<input type="radio" name="wuld_visit_again" value="maybe"> Maybe
+				</p>
+				<div>
+					<label>Comments:</label><br />
+					<textarea name="comment" rows="6" cols="40"></textarea>
+				</div>
+				<p>
+					<input type="checkbox" name="sign_up" value="sign_up" checked /><label>Sign me up for email updates</label>
+				</p>
+				<input type="submit" name="submit" value="Submit review" />
+				<!-- 
+				 Section Review End
+				-->
+			</fieldset>
+		</form>
 	</body>
-
 </html> 
